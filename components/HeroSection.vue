@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const currentSlide = ref(0)
+import steel from '@/assets/img/steel.jpg'
 
 const heroSlides = [
   {
@@ -9,7 +10,7 @@ const heroSlides = [
     subtitle: 'Over two decades of mechanical, structural, and civil engineering expertise across Nigeria\'s industrial landscape.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2400&q=80',
+    image: steel,
     tag: 'Structural Steel',
     title: 'Precision Fabrication,<br>Unmatched<br>Quality',
     subtitle: 'From piping to heavy structural steel, we deliver projects that stand the test of time.',

@@ -1,49 +1,56 @@
 <script setup lang="ts">
 const sectionRef = ref<HTMLElement>()
 const isVisible = ref(false)
+import manufacturing from '@/assets/img/industries/manufacturing.jpg'
+import oilandgas from '@/assets/img/industries/oilandgas.jpg'
+import food from '@/assets/img/industries/food-breverage.jpg'
+import packaging from '@/assets/img/industries/packaging.jpg'
+import construction from '@/assets/img/industries/construction.jpg'
+import nonProfit from '@/assets/img/industries/nonProfit.jpg'
+import steel from '@/assets/img/industries/steel.jpg'
 
 const industries = [
   {
     icon: '🏭',
     title: 'Manufacturing',
     desc: 'Plant maintenance, fabrication, and turnkey factory projects for manufacturers across Nigeria.',
-    image: 'https://images.unsplash.com/photo-1533417479674-4c22b8d05f62?auto=format&fit=crop&w=600&q=80',
+    image: manufacturing,
   },
   {
     icon: '⛽',
     title: 'Oil & Gas',
     desc: 'Storage tank fabrication, piping, and structural works for upstream and downstream operations.',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80',
+    image: oilandgas,
   },
   {
     icon: '🍫',
     title: 'Food & Beverage',
     desc: 'Hygienic mechanical systems and facility construction for food and beverage producers.',
-    image: 'https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=600&q=80',
+    image: food,
   },
   {
     icon: '📦',
     title: 'Packaging',
     desc: 'Machine installation, plant upgrades, and structural works for packaging facilities.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80',
+    image: packaging,
   },
   {
     icon: '🏢',
     title: 'Real Estate & Construction',
     desc: 'Full-scope civil, structural, and architectural works for residential and commercial projects.',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=600&q=80',
+    image: construction,
   },
   {
     icon: '🚛',
     title: 'Logistics & Warehousing',
     desc: 'Warehouse construction, loading bays, and storage infrastructure for logistics companies.',
-    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=80',
+    image: steel,
   },
   {
     icon: '🌐',
     title: 'Nonprofit & Development',
     desc: 'Infrastructure solutions for NGOs and public health initiatives across West Africa.',
-    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=600&q=80',
+    image: nonProfit,
   },
 ]
 

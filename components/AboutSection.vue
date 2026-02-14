@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const sectionRef = ref<HTMLElement>()
 const isVisible = ref(false)
+import steel from '@/assets/img/steel.jpg'
 
 const milestones = [
   { year: '1994', event: 'Founded as Klassmec Enterprises', icon: '🏢' },
@@ -58,7 +59,7 @@ onMounted(() => {
           <!-- Bottom image -->
           <div class="absolute bottom-0 left-12 h-56 w-72 rounded-2xl overflow-hidden shadow-xl z-10">
             <img
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80"
+              :src="steel"
               alt="Industrial plant"
               class="h-full w-full object-cover hover:scale-105 transition-transform duration-500"
             />

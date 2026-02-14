@@ -14,7 +14,7 @@ const scrollTo = (id: string) => {
         <!-- Brand -->
         <div class="lg:col-span-2">
           <div class="flex items-center gap-3 mb-4">
-            <img src="~/assets/img/logo.png" alt="Klassmec" class="h-10 w-auto" />
+            <img src="~/assets/img/logo.png" alt="Klassmec" class="h-10 w-auto rounded-full" />
             <div>
               <p class="font-display text-sm font-bold text-white">Klassmec Technical Services</p>
               <p class="text-xs text-white/50">Nigeria Limited</p>

@@ -22,7 +22,27 @@ const services = [
 
 const handleSubmit = async () => {
   isSubmitting.value = true
-  await new Promise((r) => setTimeout(r, 1500))
+  
+  // Construct email body
+  const subject = `New Contact Request: ${form.service || 'General Inquiry'}`
+  const body = `
+Name: ${form.name}
+Email: ${form.email}
+Phone: ${form.phone}
+Service Needed: ${form.service}
+
+Message:
+${form.message}
+  `.trim()
+
+  // Create mailto link
+  const mailtoLink = `mailto:klassmectechserv@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  
+  // Open email client
+  window.location.href = mailtoLink
+
+  // Show simulated success state
+  await new Promise((r) => setTimeout(r, 1000))
   isSubmitting.value = false
   isSubmitted.value = true
 }

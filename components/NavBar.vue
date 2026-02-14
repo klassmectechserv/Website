@@ -55,7 +55,7 @@ const scrollTo = (href: string) => {
           @click.prevent="scrollTo('#home')"
           class="flex items-center gap-3 group"
         >
-          <img src="~/assets/img/logo.png" alt="Klassmec" class="h-12 w-auto" />
+          <img src="~/assets/img/logo.png" alt="Klassmec" class="h-12 w-auto rounded-full" />
         </a>
 
         <!-- Desktop Nav -->
