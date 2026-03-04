@@ -3,11 +3,7 @@
 /// <reference path="app.config.d.ts" />
 /// <reference path="runtime-config.d.ts" />
 /// <reference path="../../node_modules/@nuxt/nitro-server/dist/index.d.mts" />
-/// <reference path="../module/nuxt-site-config.d.ts" />
-/// <reference path="nuxt-robots-nitro.d.ts" />
 /// <reference path="nitro-middleware.d.ts" />
-/// <reference path="../module/nuxt-og-image.d.ts" />
-/// <reference path="../module/nuxt-seo-utils.d.ts" />
 
 import type { RuntimeConfig } from 'nuxt/schema'
 import type { H3Event } from 'h3'

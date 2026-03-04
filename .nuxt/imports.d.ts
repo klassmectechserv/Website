@@ -1,4 +1,3 @@
-export { defineAddress, defineAggregateOffer, defineAggregateRating, defineArticle, defineBook, defineBookEdition, defineBreadcrumb, defineComment, defineCourse, defineDataset, defineEvent, defineFoodEstablishment, defineHowTo, defineHowToStep, defineImage, defineItemList, defineJobPosting, defineListItem, defineLocalBusiness, defineMovie, defineMusicAlbum, defineMusicGroup, defineMusicPlaylist, defineMusicRecording, defineOffer, defineOpeningHours, defineOrganization, definePerson, definePlace, definePodcastEpisode, definePodcastSeason, definePodcastSeries, defineProduct, defineQuestion, defineReadAction, defineRecipe, defineReview, defineSearchAction, defineService, defineSoftwareApp, defineTVEpisode, defineTVSeason, defineTVSeries, defineVideo, defineVirtualLocation, defineWebPage, defineWebSite } from '@unhead/schema-org/vue';
 export { useScriptTriggerConsent, useScriptEventPage, useScriptTriggerElement, useScript, useScriptGoogleAnalytics, useScriptPlausibleAnalytics, useScriptCrisp, useScriptClarity, useScriptCloudflareWebAnalytics, useScriptFathomAnalytics, useScriptMatomoAnalytics, useScriptGoogleTagManager, useScriptGoogleAdsense, useScriptSegment, useScriptMetaPixel, useScriptXPixel, useScriptIntercom, useScriptHotjar, useScriptStripe, useScriptLemonSqueezy, useScriptVimeoPlayer, useScriptYouTubePlayer, useScriptGoogleMaps, useScriptNpm, useScriptUmamiAnalytics, useScriptSnapchatPixel, useScriptRybbitAnalytics, useScriptDatabuddyAnalytics, useScriptRedditPixel, useScriptPayPal } from '#app/composables/script-stubs';
 export { isVue2, isVue3 } from 'vue-demi';
 export { defineNuxtLink } from '#app/components/nuxt-link';
@@ -31,17 +30,3 @@ export { requestIdleCallback, cancelIdleCallback } from '#app/compat/idle-callba
 export { setInterval } from '#app/compat/interval';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
-export { getNitroOrigin } from '../node_modules/nuxt-site-config/dist/runtime/app/composables/getNitroOrigin';
-export { updateSiteConfig } from '../node_modules/nuxt-site-config/dist/runtime/app/composables/updateSiteConfig';
-export { useNitroOrigin } from '../node_modules/nuxt-site-config/dist/runtime/app/composables/useNitroOrigin';
-export { useSiteConfig } from '../node_modules/nuxt-site-config/dist/runtime/app/composables/useSiteConfig';
-export { createSitePathResolver, withSiteTrailingSlash, withSiteUrl } from '../node_modules/nuxt-site-config/dist/runtime/app/composables/utils';
-export { useRobotsRule } from '../node_modules/@nuxtjs/robots/dist/runtime/app/composables/useRobotsRule';
-export { useBotDetection } from '../node_modules/@nuxtjs/robots/dist/runtime/app/composables/useBotDetection';
-export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
-export { defineOgImage } from '../node_modules/nuxt-og-image/dist/runtime/app/composables/defineOgImage';
-export { defineOgImageComponent } from '../node_modules/nuxt-og-image/dist/runtime/app/composables/defineOgImageComponent';
-export { defineOgImageScreenshot } from '../node_modules/nuxt-og-image/dist/runtime/app/composables/defineOgImageScreenshot';
-export { useSchemaOrg } from '../node_modules/nuxt-schema-org/dist/runtime/app/composables/useSchemaOrg';
-export { useI18n } from '../node_modules/nuxt-seo-utils/dist/runtime/app/composables/polyfills';
-export { useBreadcrumbItems } from '../node_modules/nuxt-seo-utils/dist/runtime/app/composables/useBreadcrumbItems';
