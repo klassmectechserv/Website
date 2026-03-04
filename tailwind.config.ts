@@ -1,8 +1,5 @@
-// tailwind.config.js
-const plugin = require('tailwindcss/plugin');
-
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -12,9 +9,8 @@ module.exports = {
     "./app.vue"
   ],
   theme: {
-     extend: {
+    extend: {
       colors: {
-        // Klassmec Primary Green
         forest: {
           50: '#f0fdf4',
           100: '#dcfce7',
@@ -28,7 +24,6 @@ module.exports = {
           900: '#14532d',
           950: '#052e16',
         },
-        // Klassmec Gold
         gold: {
           50: '#fdf9ec',
           100: '#faf0cc',
@@ -42,7 +37,6 @@ module.exports = {
           900: '#5f3716',
           950: '#371c08',
         },
-        // Supporting neutrals
         slate: {
           50: '#f8fafc',
           100: '#f1f5f9',
@@ -92,20 +86,5 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [
-    plugin(function({ addUtilities }) {
-      addUtilities({
-        '.bg-green-striped': {
-          'background-image': `linear-gradient(45deg, #0a2000 10%, transparent 10%,
-            transparent 20%, #0a2000 20%, #0a2000 30%, transparent 30%, transparent 40%,
-            #0a2000 40%, #0a2000 50%, transparent 50%, transparent 60%, #0a2000 60%,
-            #0a2000 70%, transparent 70%, transparent 80%, #0a2000 80%, #0a2000 90%,
-            transparent 90%, transparent)`,
-        },
-      })
-    })
-  ],
+  plugins: [],
 }
